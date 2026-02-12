@@ -1,0 +1,98 @@
+﻿Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  dbus 0.7.11 (0.7.12 available)
+  ffi 2.1.5 (2.2.0 available)
+  flutter_local_notifications 20.0.0 (20.1.0 available)
+  flutter_local_notifications_windows 2.0.0 (2.0.1 available)
+  google_fonts 8.0.0 (8.0.1 available)
+  hooks 1.0.0 (1.0.1 available)
+  lints 6.0.0 (6.1.0 available)
+  matcher 0.12.17 (0.12.18 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.17.0 (1.18.1 available)
+  objective_c 9.2.4 (9.3.0 available)
+  source_span 1.10.1 (1.10.2 available)
+  test_api 0.7.7 (0.7.9 available)
+  timezone 0.10.1 (0.11.0 available)
+Got dependencies!
+15 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Building Windows application...                                 
+flutter : 
+CUSTOMBUILD : error 
+: Unable to read 
+file: C:\Users\Mehfes
+S\OneDrive\Masa∩┐╜st∩
+┐╜\BILKENT\2026- Son 
+Bir Dans\auraLink\aur
+aLink_App\.dart_tool\
+flutter_build\9e9f0c0
+bf55d96434759a90de30c
+d4b7\app.dill [C:\Use
+rs\MehfesS\OneDrive\M
+asa∩┐╜st∩┐╜\BILKENT\2
+026- Son Bir Dans\aur
+aLink\auraLink_App\bu
+ild\windows\x64\flutt
+er\flutter_assemble.v
+cxproj]
+At line:1 char:1
++ flutter build 
+windows > 
+build_log.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (CUSTOMB   
+ UILD : e...sembl    
+e.vcxproj]:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+C:\Program 
+Files\Microsoft 
+Visual Studio\2022\Co
+mmunity\MSBuild\Micro
+soft\VC\v170\Microsof
+t.CppCommon.targets(2
+54,5): error 
+MSB8066: Custom 
+build for 'C:\Users\M
+ehfesS\OneDrive\Masa∩
+┐╜st∩┐╜\BILKENT\2026-
+ Son Bir Dans\auraLin
+k\auraLink_App\build\
+windows\x64\CMakeFile
+s\2916455daff66bd2e89
+3fddfc88a1bde\flutter
+_windows.dll.rule;C:\
+Users\MehfesS\OneDriv
+e\Masa∩┐╜st∩┐╜\BILKEN
+T\2026- Son Bir Dans\
+auraLink\auraLink_App
+\build\windows\x64\CM
+akeFiles\632ebd71d253
+24b6f4b7e490daa4aa27\
+flutter_assemble.rule
+;C:\Users\MehfesS\One
+Drive\Masa∩┐╜st∩┐╜\BI
+LKENT\2026- Son Bir D
+ans\auraLink\auraLink
+_App\windows\flutter\
+CMakeLists.txt' 
+exited with code 1. [
+C:\Users\MehfesS\OneD
+rive\Masa∩┐╜st∩┐╜\BIL
+KENT\2026- Son Bir Da
+ns\auraLink\auraLink_
+App\build\windows\x64
+\flutter\flutter_asse
+mble.vcxproj]
+Building Windows application...                                    39.7s
+Build process failed.

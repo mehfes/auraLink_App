@@ -1,0 +1,170 @@
+﻿Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  dbus 0.7.11 (0.7.12 available)
+  ffi 2.1.5 (2.2.0 available)
+  flutter_local_notifications 20.0.0 (20.1.0 available)
+  flutter_local_notifications_windows 2.0.0 (2.0.1 available)
+  google_fonts 8.0.0 (8.0.1 available)
+  hooks 1.0.0 (1.0.1 available)
+  lints 6.0.0 (6.1.0 available)
+  matcher 0.12.17 (0.12.18 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.17.0 (1.18.1 available)
+  objective_c 9.2.4 (9.3.0 available)
+  source_span 1.10.1 (1.10.2 available)
+  test_api 0.7.7 (0.7.9 available)
+  timezone 0.10.1 (0.11.0 available)
+Got dependencies!
+15 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading C:/Users/MehfesS/OneDrive/Masa├╝st├╝/BILKENT/2026- Son Bir Dans/auraLink/auraLink_App/test/widget_test.dart
+00:00 +0: App smoke test
+Pending timers:
+Timer (duration: 0:00:20.000000, periodic: false), created:
+#0      new FakeTimer._ (package:fake_async/fake_async.dart:342:62)
+#1      FakeAsync._createTimer (package:fake_async/fake_async.dart:260:29)
+#2      FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:185:15)
+#5      new MqttConnectionKeepAlive (package:mqtt_client/src/connectionhandling/mqtt_client_mqtt_connection_keep_alive.dart:91:17)
+#6      MqttClient.connect (package:mqtt_client/src/mqtt_client.dart:382:19)
+#7      MqttServerClient.connect (package:mqtt_client/src/mqtt_server_client.dart:134:24)
+#8      AppState._connectMqtt (package:my_flutter_app/providers/app_state.dart:95:21)
+#9      new AppState (package:my_flutter_app/providers/app_state.dart:42:5)
+#10     main.<anonymous closure>.<anonymous closure> (file:///C:/Users/MehfesS/OneDrive/Masa%C3%BCst%C3%BC/BILKENT/2026-%20Son%20Bir%20Dans/auraLink/auraLink_App/test/widget_test.dart:13:49)
+#11     _CreateInheritedProviderState.value (package:provider/src/inherited_provider.dart:749:36)
+#12     _InheritedProviderScopeElement.value (package:provider/src/inherited_provider.dart:603:33)
+#13     Provider.of (package:provider/src/provider.dart:337:37)
+#14     AuraLinkApp.build (package:my_flutter_app/main.dart:29:28)
+#15     StatelessElement.build (package:flutter/src/widgets/framework.dart:5892:49)
+#16     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5820:15)
+#17     Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#18     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5802:5)
+#19     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5796:5)
+...     Normal element mounting (7 frames)
+#26     _InheritedProviderScopeElement.mount (package:provider/src/inherited_provider.dart:424:11)
+...     Normal element mounting (7 frames)
+#33     SingleChildWidgetElementMixin.mount (package:nested/nested.dart:222:11)
+...     Normal element mounting (7 frames)
+#40     _NestedHookElement.mount (package:nested/nested.dart:187:11)
+...     Normal element mounting (7 frames)
+#47     SingleChildWidgetElementMixin.mount (package:nested/nested.dart:222:11)
+#48     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4590:20)
+#49     Element.updateChild (package:flutter/src/widgets/framework.dart:4053:20)
+#50     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#51     Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#52     ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#53     _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
+#54     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#55     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#56     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#57     Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#58     StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#59     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#60     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#61     Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#62     ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#63     _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
+#64     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#65     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#66     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#67     Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#68     StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#69     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#70     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#71     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#72     Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#73     StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#74     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#75     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#76     Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#77     ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#78     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#79     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#80     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#81     Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#82     StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#83     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#84     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#85     Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#86     ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#87     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#88     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#89     Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#90     ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#91     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#92     _RawViewElement._updateChild (package:flutter/src/widgets/view.dart:481:16)
+#93     _RawViewElement.update (package:flutter/src/widgets/view.dart:568:5)
+#94     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#95     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#96     Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#97     StatelessElement.update (package:flutter/src/widgets/framework.dart:5898:5)
+#98     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#99     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#100    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#101    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#102    StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#103    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#104    RootElement._rebuild (package:flutter/src/widgets/binding.dart:1782:16)
+#105    RootElement.update (package:flutter/src/widgets/binding.dart:1760:5)
+#106    RootElement.performRebuild (package:flutter/src/widgets/binding.dart:1774:7)
+#107    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#108    BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750:15)
+#109    BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807:11)
+#110    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111:18)
+#111    AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:1506:19)
+#112    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#113    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1434:15)
+#114    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1347:9)
+#115    AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1335:9)
+#118    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#119    AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1324:27)
+#120    WidgetTester.pumpWidget.<anonymous closure> (package:flutter_test/src/widget_tester.dart:598:22)
+#123    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#124    WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#125    main.<anonymous closure> (file:///C:/Users/MehfesS/OneDrive/Masa%C3%BCst%C3%BC/BILKENT/2026-%20Son%20Bir%20Dans/auraLink/auraLink_App/test/widget_test.dart:10:18)
+#126    testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:29)
+<asynchronous suspension>
+#127    TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1059:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+Timer (duration: 0:00:00.010000, periodic: false), created:
+#0      new FakeTimer._ (package:fake_async/fake_async.dart:342:62)
+#1      FakeAsync._createTimer (package:fake_async/fake_async.dart:260:29)
+#2      FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:185:15)
+#5      _NativeSocket.staggeredLookup.<anonymous closure> (dart:io-patch/socket_patch.dart:750:27)
+#12     _NativeSocket.tryConnectToResolvedAddresses (dart:io-patch/socket_patch.dart:1119:39)
+#13     _NativeSocket.startConnect.<anonymous closure> (dart:io-patch/socket_patch.dart:848:14)
+<asynchronous suspension>
+#19     _NativeSocket.connect.<anonymous closure> (dart:io-patch/socket_patch.dart:1146:69)
+<asynchronous suspension>
+#20     _RawSocket.connect.<anonymous closure> (dart:io-patch/socket_patch.dart:2265:12)
+<asynchronous suspension>
+#21     Socket._connect.<anonymous closure> (dart:io-patch/socket_patch.dart:2538:12)
+<asynchronous suspension>
+#22     MqttServerNormalConnection.connect.<anonymous closure> (package:mqtt_client/src/connectionhandling/server/mqtt_client_mqtt_server_normal_connection.dart:38:17)
+<asynchronous suspension>
+(elided 13 frames from dart:async and package:stack_trace)
+
+ΓòÉΓòÉΓòí EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK Γò₧ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+The following assertion was thrown running a test:
+A Timer is still pending even after the widget tree was disposed.
+'package:flutter_test/src/binding.dart':
+Failed assertion: line 1617 pos 12: '!timersPending'
+
+When the exception was thrown, this was the stack:
+#2      AutomatedTestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:1617:12)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1078:7)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  App smoke test
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+00:01 +0 -1: App smoke test [E]
+  Test failed. See exception logs above.
+  The test description was: App smoke test
+  
+00:01 +0 -1: Some tests failed.

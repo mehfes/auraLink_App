@@ -38,8 +38,10 @@ class AppState extends ChangeNotifier {
   String mqttBroker = 'test.mosquitto.org';
   int mqttPort = 1883;
 
-  AppState() {
-    _connectMqtt();
+  AppState({bool testMode = false}) {
+    if (!testMode) {
+      _connectMqtt();
+    }
   }
 
   void toggleTheme(bool val) {
