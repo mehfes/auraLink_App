@@ -8,6 +8,8 @@ import '../providers/app_state.dart';
 import 'red_screen.dart';
 import 'settings_screen.dart';
 
+import '../services/logger_service.dart';
+
 // Widgets
 import '../widgets/stat_card.dart';
 import '../widgets/thermostat_card.dart';
@@ -79,6 +81,7 @@ class MainScreen extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.settings_outlined),
             onPressed: () {
+              LoggerService.log('User navigated to Settings');
               Navigator.push(
                 context, 
                 MaterialPageRoute(builder: (_) => const SettingsScreen()),

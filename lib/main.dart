@@ -6,10 +6,14 @@ import 'theme.dart';
 import 'providers/app_state.dart';
 import 'screens/main_screen.dart';
 
+import 'services/logger_service.dart';
+
 // ---------------------------------------------------------------------------
 // AURALINK OS - MAIN ENTRY POINT
 // ---------------------------------------------------------------------------
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await LoggerService.init();
   runApp(
     MultiProvider(
       providers: [

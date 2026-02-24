@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:mqtt_client/mqtt_client.dart';
 import 'package:mqtt_client/mqtt_server_client.dart';
 
+import '../services/logger_service.dart';
+
 // ---------------------------------------------------------------------------
 // APP STATE (VIEW MODEL + LOGIC)
 // ---------------------------------------------------------------------------
@@ -45,16 +47,19 @@ class AppState extends ChangeNotifier {
   }
 
   void toggleTheme(bool val) {
+    LoggerService.log('User toggled theme. Dark Mode: $val');
     isDarkMode = val;
     notifyListeners();
   }
 
   void toggleNotifications(bool val) {
+    LoggerService.log('User toggled notifications. Enabled: $val');
     areNotificationsEnabled = val;
     notifyListeners();
   }
 
   Future<void> updateMqttSettings(String newBroker, int newPort) async {
+    LoggerService.log('User updated MQTT settings. Broker: $newBroker, Port: $newPort');
     mqttBroker = newBroker;
     mqttPort = newPort;
     notifyListeners();
@@ -69,6 +74,7 @@ class AppState extends ChangeNotifier {
     // Clamp between reasonable limits
     if (targetTemperature < 16) targetTemperature = 16;
     if (targetTemperature > 30) targetTemperature = 30;
+    LoggerService.log('User set target temperature to $targetTemperature');
     notifyListeners();
   }
 
@@ -118,18 +124,18 @@ class AppState extends ChangeNotifier {
   }
 
   void _onConnected() {
-    print('MQTT Connected');
+    LoggerService.log('MQTT Connected');
   }
 
   void _onDisconnected() {
-    print('MQTT Disconnected');
+    LoggerService.log('MQTT Disconnected');
     isConnected = false;
     connectionStatus = 'Disconnected';
     notifyListeners();
   }
 
   void _onSubscribed(String topic) {
-    print('Subscribed to $topic');
+    LoggerService.log('Subscribed to $topic');
   }
 
   void _subscribeToTopics() {
@@ -152,7 +158,7 @@ class AppState extends ChangeNotifier {
   }
 
   void _handleMessage(String topic, String payload) {
-    print('Received: $topic -> $payload');
+    LoggerService.log('Received Signal: $topic -> $payload');
     
     if (topic == 'auralink/sensor/dht22') {
       try {
@@ -161,7 +167,7 @@ class AppState extends ChangeNotifier {
         humidity = (data['humidity'] as num).toDouble();
         notifyListeners();
       } catch (e) {
-        print('Error parsing generic sensor data');
+        LoggerService.log('Error parsing generic sensor data');
       }
     } else if (topic == 'auralink/alert') {
       if (payload.contains('FIRE_DETECTED')) {
@@ -173,6 +179,7 @@ class AppState extends ChangeNotifier {
   }
 
   void setCurtainPosition(double val) {
+    LoggerService.log('User set curtain position to $val');
     // Optimistic UI update - always update local state immediately
     curtainPosition = val;
     notifyListeners();
@@ -190,16 +197,19 @@ class AppState extends ChangeNotifier {
   }
 
   void triggerFireAlarm() {
+    LoggerService.log('User triggered SIMULATED FIRE ALARM');
     isFireAlarm = true;
     notifyListeners();
   }
 
   void triggerEarthquakeAlarm() {
+    LoggerService.log('User triggered SIMULATED EARTHQUAKE ALARM');
     isEarthquakeAlarm = true;
     notifyListeners();
   }
 
   void dismissAlarm() {
+    LoggerService.log('User dismissed alarm');
     isFireAlarm = false;
     isEarthquakeAlarm = false;
     notifyListeners();

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../theme.dart';
 import '../providers/app_state.dart';
+import '../services/logger_service.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -68,6 +69,11 @@ class SettingsScreen extends StatelessWidget {
             icon: Icons.code,
             title: 'Developers',
             subtitle: 'Mehmet Efe Sak & Mehmet Kaan Asdemir',
+          ),
+          _SettingsTile(
+            icon: Icons.file_present,
+            title: 'Log File Path',
+            subtitle: LoggerService.logFilePath,
           ),
         ],
       ),
