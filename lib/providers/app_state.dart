@@ -4,7 +4,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:mqtt_client/mqtt_client.dart';
-import 'package:mqtt_client/mqtt_server_client.dart';
+// DEĞİŞİKLİK 1: Server client yerine Browser client'ı import ediyoruz
+import 'package:mqtt_client/mqtt_browser_client.dart';
 
 import '../services/logger_service.dart';
 
@@ -12,8 +13,8 @@ import '../services/logger_service.dart';
 // APP STATE (VIEW MODEL + LOGIC)
 // ---------------------------------------------------------------------------
 class AppState extends ChangeNotifier {
-  // MQTT Client
-  MqttServerClient? client;
+  // DEĞİŞİKLİK 2: MqttServerClient yerine MqttBrowserClient kullanıyoruz
+  MqttBrowserClient? client;
   bool isConnected = false;
   String connectionStatus = 'Disconnected';
 
@@ -37,8 +38,10 @@ class AppState extends ChangeNotifier {
   // Settings
   bool isDarkMode = false;
   bool areNotificationsEnabled = true;
-  String mqttBroker = 'test.mosquitto.org';
-  int mqttPort = 1883;
+  
+  // DEĞİŞİKLİK 3: Web uyumlu bağlantı adresini ve 8080 WebSocket portunu kullanıyoruz
+  String mqttBroker = 'ws://test.mosquitto.org';
+  int mqttPort = 8080;
 
   AppState({bool testMode = false}) {
     if (!testMode) {
@@ -80,9 +83,13 @@ class AppState extends ChangeNotifier {
 
   // MQTT Connection Logic
   Future<void> _connectMqtt() async {
-    // Public test broker
-    client = MqttServerClient(mqttBroker, 'auralink_app_${Random().nextInt(1000)}');
+    // DEĞİŞİKLİK 4: Client'ı MqttBrowserClient ile başlatıyoruz
+    client = MqttBrowserClient(mqttBroker, 'auralink_app_${Random().nextInt(1000)}');
     client!.port = mqttPort;
+    
+    // DEĞİŞİKLİK 5: WebSockets protokol ayarı (Web çalışması için zorunludur)
+    client!.websocketProtocols = MqttClientConstants.protocolsSingleDefault;
+    
     client!.logging(on: false);
     client!.keepAlivePeriod = 20;
     client!.onDisconnected = _onDisconnected;
@@ -184,7 +191,7 @@ class AppState extends ChangeNotifier {
     curtainPosition = val;
     notifyListeners();
     
-    // Only attempt MQTT if connected
+    // Sadece bağlıysa MQTT paketini gönder
     if (client != null && isConnected) {
       final builder = MqttClientPayloadBuilder();
       String command = 'SET:${(val * 100).toInt()}';
